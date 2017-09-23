@@ -58,6 +58,7 @@ div#container{
 		font-family:script;
 		decoration:none;
 		color:#C5CCEF;
+		cursor:pointer;
 	}
 	div#prsnl-btn{
 		top:110px;
@@ -74,4 +75,19 @@ div#container{
 	div#mail-btn{
 		top:260px;
 		left:35px;		
+	}
+	div#prfl-btns-cls{
+		width:40px;
+		height:40px;
+		position:fixed;
+		display:block;
+		background-color:white;
+		border-radius:50%;
+		left:120px;
+		top:40px;
+		text-align:center;
+		border:10px solid #C5CCEF;
+		cursor:pointer;
+		padding:2px;
+		color:#C5CCEF;
 	}

@@ -13,6 +13,30 @@ main_page_head='''
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="css/Portfolio.css">
+	<script>
+	$(document).ready(function(){
+		$("#prsnl-btn").hide();
+		$("#edu-btn").hide();
+		$("#prjct-btn").hide();
+		$("#mail-btn").hide();
+		$("#prfl-btns-cls").hide();
+		$("#prfl").click(function(e){
+			$("#prsnl-btn").show(500);
+			$("#edu-btn").show(1000);
+			$("#prjct-btn").show(1500);
+			$("#mail-btn").show(2000);
+			$("#prfl-btns-cls").show(2500);
+		});
+		$("#prfl-btns-cls").click(function(){
+			$("#prsnl-btn").hide(2000);
+			$("#edu-btn").hide(1500);
+			$("#prjct-btn").hide(1000);
+			$("#mail-btn").hide(500);
+			$("#prfl-btns-cls").hide(2500);
+		});
+		
+	})
+	</script>
 </head>
 '''
 
@@ -28,6 +52,9 @@ main_page_content='''
 <div id="container">
 <div id="prfl"><!--Profile image on left corner-->
 <img src="img/dp.jpeg" id="dp-img">
+</div>
+<div id="prfl-btns-cls"><!--Simple close button-->
+<span class="glyphicon glyphicon-remove" ></span>
 </div>
 <div id="prsnl-btn" class="btn-cntnr"><!--Simple button associtated -->
 <a id="prsnl-btn-lnk" class="btn-lnk">Personal Information.</a>
