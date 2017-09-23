@@ -21,11 +21,26 @@ main_page_content='''
 <!DOCTYPE html>
 <html lang="en">
 <body>
-<video poster="img/poster.jpg" id="bgvid" playsinline autoplay muted loop>
+<video poster="img/crack.jpg" id="bgvid" playsinline autoplay muted loop>
  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-<source src="vdos/Caux.mp4" type="video/mp4">
+<source src="vdos/Cracker.mp4" type="video/mp4">
 </video>
 <div id="container">
+<div id="prfl"><!--Profile image on left corner-->
+<img src="img/dp.jpeg" id="dp-img">
+</div>
+<div id="prsnl-btn" class="btn-cntnr"><!--Simple button associtated -->
+<a id="prsnl-btn-lnk" class="btn-lnk">Personal Information.</a>
+</div>
+<div id="edu-btn" class="btn-cntnr"><!--Simple button associtated -->
+<a id="edu-btn-lnk" class="btn-lnk">Educational Details.</a>
+</div>
+<div id="prjct-btn" class="btn-cntnr"><!--Simple button associtated -->
+<a id="prjct-btn-lnk" class="btn-lnk">Project Details.</a>
+</div>
+<div id="mail-btn" class="btn-cntnr"><!--Simple button associtated -->
+<a id="mail-btn-lnk" class="btn-lnk">Mail Praabhu.</a>
+</div>
 
 
 </div>
